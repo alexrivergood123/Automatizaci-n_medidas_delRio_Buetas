@@ -30,7 +30,7 @@ osc.write(":WGEN:OUTP ON")
 
 # Osciloscopio
 osc.write(":CHAN1:DISP ON")
-osc.write("CHAN1:VOLT:OFFS 0")
+osc.write("CHAN1:OFFS 0")
 osc.write(":ACQuire:TYPE AVER")
 
 
@@ -101,4 +101,5 @@ osc.close()
 
 end = time.time()
 print(f"\nTiempo total: {end - start:.2f} s")
+
 
