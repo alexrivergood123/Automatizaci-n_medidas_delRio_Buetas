@@ -30,8 +30,8 @@ osc.write("WGEN:FUNC STEP")
 osc.write(f"WGEN:FREQ {FREQ_SR}")
 osc.write("WGEN:VOLT:OFFS 0")
 osc.write("WGEN:OUTP 1")
-osc.write("CHAN1:VOLT:OFFS 0")
-osc.write("CHAN2:VOLT:OFFS 0")
+osc.write("CHAN1:OFFS 0")
+osc.write("CHAN2:OFFS 0")
 osc.write(":ACQuire:TYPE AVER")
 
 
@@ -95,4 +95,5 @@ plt.show()
 
 osc.write("WGEN:OUTP 0")
 osc.close()
+
 
